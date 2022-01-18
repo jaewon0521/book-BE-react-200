@@ -7,15 +7,15 @@
 
 ## 개발 환경
 
-node.js v16.9.1
+1. node.js v16.9.1
 
-npm v7.21.1
+2. npm v7.21.1
 
-MYSQL
+3. MYSQL
 
-window 10
+4. window 10
 
-chorme
+5. chorme
 
 ## 프로젝트 실행 방법
 폴더 경로에서 다음과 같이 명령어를 실행해주세요.
