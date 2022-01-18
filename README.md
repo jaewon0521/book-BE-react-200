@@ -7,6 +7,12 @@
 
 ## 프로젝트 실행 방법
 폴더 경로에서 다음과 같이 node module을 추가 해주세요.
+
+
 npm install 
+
+
 폴더 경로에서 프로젝트를 실행 해주세요.
+
+
 npm run dev
