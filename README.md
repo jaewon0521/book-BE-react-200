@@ -21,7 +21,8 @@ chorme
 폴더 경로에서 다음과 같이 node module을 추가 해주세요.
 
 
-```npm install``` 
+```npm install
+``` 
 
 
 폴더 경로에서 프로젝트를 실행 해주세요.
