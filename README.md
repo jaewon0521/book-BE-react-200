@@ -39,6 +39,6 @@ npm run dev
     db 연결 패키지
     npm install --save mybatis-mapper
     
-    서버 경로 업로드 패키지
+    이미지,파일 서버 경로 업로드 패키지
     npm install --save multer
     
