@@ -5,6 +5,18 @@
 
 이 프로젝트는 react와 node.js express 프레임워크를 사용하여 REST API를 구현한 프로젝트입니다.
 
+## 개발 환경
+
+node.js v16.9.1
+
+npm v7.21.1
+
+MYSQL
+
+window 10
+
+chorme
+
 ## 프로젝트 실행 방법
 폴더 경로에서 다음과 같이 node module을 추가 해주세요.
 
