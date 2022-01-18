@@ -42,3 +42,9 @@ npm run dev
     이미지,파일 서버 경로 업로드 패키지
     npm install --save multer
     
+## 배포
+리액트 200제 프로젝트 배포하는 방법
+
+## 느낀점
+
+    
