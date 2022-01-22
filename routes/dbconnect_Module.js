@@ -20,7 +20,7 @@ router.post("/", (req, res) => {
   const mybatisMapper = require("mybatis-mapper");
   var param = req.body;
 
-  console.log("test :" + param.mapper);
+  console.log("test :" + param.test);
 
   //mybatis mapper경로 설정
   mybatisMapper.createMapper(["./models/" + param.mapper + ".xml"]);
@@ -54,7 +54,22 @@ router.post("/", (req, res) => {
         string = JSON.stringify(results);
         var json = JSON.parse(string);
         if (req.body.crud == "select") {
-          res.send({ json });
+          if (param.mapper_id == 'selectLoginCheck') {
+            if (json[0] == undefined) {
+              res.send(null);
+            } else {
+              bcrypt.compare(req.body.is_Password, json[0].userpassword,
+                function (err, login_flag) {
+                  if (login_flag == true) {
+                    res.send({ json });
+                  } else {
+                    res.send(null);
+                  }
+                });
+            }
+          } else {
+            res.send({ json });
+          }
         } else {
           res.send("succ");
         }
