@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="UserMapper">
-  <insert id="inserUser">
-  INSER INTO react.react_user
-  (
+  <insert id="insertUser"> 
+    INSERT INTO react.react_user
+    (
       username
       , userorg
       , useremail
@@ -30,6 +30,14 @@
       , CONCAT(#{is_Useremail1}, '@', #{is_Useremail2})
       )
   </insert>
+
+  <select id="selectUserDpliCheck">
+      SELECT 
+        count(*) as num
+      FROM
+      react.react_user
+      WHERE useremail = #{is_Email}
+  </select>
 
   <select id="selectLoginCheck">
     SELECT 

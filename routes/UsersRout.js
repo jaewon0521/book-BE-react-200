@@ -51,6 +51,7 @@ router.post("/", (req, res, next) => {
       req.body.mapper = "UserMapper"; //mybatis xml 파일명
       req.body.crud = "select"; //select, insert, update, delete 중에 입력
       req.body.mapper_id = "selectUserDpliCheck";
+
       router.use("/", dbconnect_Module);
       next("route");
     } catch (error) {
@@ -66,9 +67,6 @@ router.post("/", (req, res, next) => {
       req.body.mapper = "UserMapper"; //mybatis xml 파일명
       req.body.crud = "select"; // select, insert, update, delete 중에 입력
       req.body.mapper_id = "selectLoginCheck";
-      req.body.test = "test";
-
-      console.log(`req.body.test : ${req.body.test}`);
 
       router.use("/", dbconnect_Module);
       next("route");
@@ -91,10 +89,11 @@ router.post("/", (req, res, next) => {
     } catch (error) {
       res.send(error);
     }
-  } else if (type == "SessionConfirm") {
+  } else if (type == "sessionConfirm") {
     try {
       let token1 = req.body.token1;
       let token2 = req.body.token2;
+      console.log(token1, token2);
 
       if (
         token1 != undefined &&
