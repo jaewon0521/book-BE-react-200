@@ -57,7 +57,9 @@ router.post("/", (req, res) => {
             if (param.mapper_id == "selectLoginCheck") {
               if (json[0] == undefined) {
                 res.send(null);
+                console.log("mapper id");
               } else {
+                console.log("errorrr");
                 bcrypt.compare(
                   req.body.is_Password,
                   json[0].userpassword,

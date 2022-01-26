@@ -73,7 +73,7 @@ router.post("/", (req, res, next) => {
     } catch (error) {
       console.log("Module > dbconnect error : " + error);
     }
-  } else if (type == "sessionState") {
+  } else if (type == "SessionState") {
     var userid = req.body.is_Email;
     var name = req.body.is_UserName;
 
@@ -132,7 +132,7 @@ router.post("/", (req, res, next) => {
 
       //Mysql 쿼리 호출 정보 입력
       req.body.mapper = "UserMapper";
-      req.body.curd = "select";
+      req.body.crud = "select";
       req.body.mapper_id = "selectLoginResetCheck";
 
       router.use('/', dbconnect_Module);

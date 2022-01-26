@@ -80,7 +80,7 @@
   SELECT
     userpassword
     FROM
-    reawct.react_user
+    react.react_user
     WHERE useremail = #{is_Email}
     AND username = #{is_Name}
   </select>
