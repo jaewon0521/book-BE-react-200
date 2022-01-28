@@ -3,6 +3,7 @@ var router = express.Router();
 const mysql = require("mysql");
 const bodyParser = require("body-parser");
 const bcrypt = require("bcrypt");
+const awsAuth = require("../ignorefile/awsAuth");
 
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
@@ -11,11 +12,11 @@ router.use(bodyParser.urlencoded({ extended: true }));
 const pool = mysql.createPool({
   connectionLimit: 66,
   waitForConnections: true,
-  host: "mydbjaewon.cjncfvodiaus.us-east-2.rds.amazonaws.com",
+  host: awsAuth.host,
   port: "3306",
-  database: "react",
-  user: "younjaewon",
-  password: "Mydbjaewon970521"
+  database: awsAuth.database,
+  user: awsAuth.user,
+  password: awsAuth.password,
 });
 
 router.post("/", (req, res) => {
