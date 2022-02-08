@@ -22,7 +22,8 @@ const pool = mysql.createPool({
 router.post("/", (req, res) => {
   const mybatisMapper = require("mybatis-mapper");
   var param = req.body;
-
+  console.log(`body : ${param}`);
+  
   //mybatis mapper경로 설정
   mybatisMapper.createMapper(["./models/" + param.mapper + ".xml"]);
   var time = new Date();

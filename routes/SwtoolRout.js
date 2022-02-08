@@ -8,6 +8,7 @@ router.use(bodyParser.json());
 
 router.post("/", (req, res, next) => {
   var type = req.query.type;
+  console.log(`body1 : ${req.body}`);
   if (type == "list") {
     //Swtool 리스트 조회
     try {
