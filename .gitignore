@@ -2,3 +2,8 @@ node_modulesgit
 node_modules
 
 ignorefile/awsAuth.js
+
+client/node_modules
+client/node_modulesgit
+
+
