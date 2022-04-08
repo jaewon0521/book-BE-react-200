@@ -6,6 +6,7 @@ var swtoolRouter = require('./routes/SwtoolRout.js');
 var fileuploadRouter = require('./routes/UploadRout');
 var userRouter = require('./routes/UsersRout');
 var MailRout = require('./routes/MailRout');
+require("./routes/BatchRout")
 
 var app = express();
 
