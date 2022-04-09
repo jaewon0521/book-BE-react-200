@@ -8,7 +8,7 @@ const auth = require("../ignorefile/awsAuth");
 // cron.schedule('5 0 * * *', () => { 매일 0시5분마다 실행하는 cron 표현식
 
 cron.schedule('* * * * *', () => { 
-  var mapper = 'BatchMapper'; //mybatis xml 파일명
+  var mapper = 'UserMapper'; //mybatis xml 파일명
   var crud = 'insert'; //select insert update delete 중에 입력
   var mapper_id = 'insertBatchlog';
 
