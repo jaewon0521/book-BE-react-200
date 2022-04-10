@@ -3,7 +3,6 @@ var router = express.Router();
 var cron = require("node-cron");
 const auth = require("../ignorefile/awsAuth");
 
-
 // cron.schedule('5 * * * *', () => { 매시 5분마다 실행하는 cron 표현식
 // cron.schedule('5 0 * * *', () => { 매일 0시5분마다 실행하는 cron 표현식
 
