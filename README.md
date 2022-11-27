@@ -44,9 +44,5 @@ npm run dev
     이미지,파일 서버 경로 업로드 패키지
     npm install --save multer
 
-## 배포
-
-리액트 200제 프로젝트 배포하는 방법
-
 ## 느낀점
 https://bejewled-pull-5d9.notion.site/200-7602c78de08d4575ac9c1bc1641a4cbd
